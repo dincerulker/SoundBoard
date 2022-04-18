@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="icon" href="images/png" href="./sound.png">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #a164df;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+        }
+        .image {
+            width: 400px;
+            height: 500px;
+            object-fit: contain;
+            display: none;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+        }
+        .btn {
+            display: none;
+            background-color: #6c38a0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 20px 35px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn:hover {
+            opacity: 0.9;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="images">
+        <img id="image" class="image" src="./sound.png">
+    </div>
+
+    <div class="buttons">
+        <button id="booSound" class="btn">Boo</button>
+        <button id="applauseSound" class="btn">Applause</button>
+        <button id="gaspSound" class="btn">Gasp</button>
+        <button id="tadaSound" class="btn">Tada</button>
+        <button id="victorySound" class="btn">Victory</button>
+        <button id="wrongSound" class="btn">Wrong</button>
+    </div>
+
+    <audio id="sound"></audio>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
